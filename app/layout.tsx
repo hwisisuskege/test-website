@@ -4,6 +4,7 @@ import { Header } from "@/components/header";
 import { Footer } from "@/components/footer";
 import { displayName, site } from "@/lib/site";
 import "./globals.css";
+import "./editorial.css";
 const display = localFont({
   src: "../public/fonts/space-grotesk-latin.woff2",
   variable: "--font-display",
@@ -12,6 +13,14 @@ const display = localFont({
 const body = localFont({
   src: "../public/fonts/dm-sans-latin.woff2",
   variable: "--font-body",
+  display: "swap",
+});
+const editorial = localFont({
+  src: [
+    { path: "../public/fonts/cormorant-garamond-latin.woff2", weight: "400", style: "normal" },
+    { path: "../public/fonts/cormorant-garamond-italic-latin.woff2", weight: "400", style: "italic" },
+  ],
+  variable: "--font-editorial",
   display: "swap",
 });
 export const metadata: Metadata = {
@@ -47,7 +56,7 @@ export default function RootLayout({
         }
       : null;
   return (
-    <html lang="en" className={`${display.variable} ${body.variable}`}>
+    <html lang="en" className={`${display.variable} ${body.variable} ${editorial.variable}`}>
       <body>
         <a className="skip-link" href="#main">
           Skip to content

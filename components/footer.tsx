@@ -24,7 +24,7 @@ export function Footer() {
         </nav>
       </div>
       <div className="footer-bottom">
-        <span>Thoughtfully designed. Carefully built.</span>
+        <span>A point of view. A way forward.</span>
         {site.email && <a href={`mailto:${site.email}`}>{site.email}</a>}
         {site.location && <span>{site.location}</span>}
         <span>Presence. Attention. Action.</span>

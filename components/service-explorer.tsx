@@ -3,22 +3,24 @@ import Link from "next/link";
 import { useState } from "react";
 import { services } from "@/lib/content";
 import { Eyebrow } from "./ui";
+import { Reveal } from "./reveal";
+const chapterTitles = ["A place to belong.", "A voice to recognise.", "A reason to act."];
+const chapterWords = ["Presence.", "Attention.", "Action."];
 export function ServiceExplorer() {
   const [selected, setSelected] = useState(0);
   const service = services[selected];
   return (
     <section className="services-explorer section container" id="services">
-      <div className="section-heading">
-        <Eyebrow>Three disciplines. One direction.</Eyebrow>
+      <Reveal><div className="section-heading">
+        <Eyebrow>What happens after the first impression</Eyebrow>
         <h2>
-          Good on their own. <br />
-          <span className="muted">Better together.</span>
+          Attention is a moment.<br />
+          <em>Connection takes care.</em>
         </h2>
         <p>
-          A strong website needs the right attention. <br />
-          That attention needs somewhere useful to go.
+          Three disciplines, shaped around the way<br />people discover, understand, and choose you.
         </p>
-      </div>
+      </div></Reveal>
       <div className="explorer-grid">
         <div
           className="service-tabs"
@@ -64,18 +66,9 @@ export function ServiceExplorer() {
           aria-labelledby={`service-tab-${selected}`}
           tabIndex={0}
         >
-          <div
-            className={`service-diagram diagram-${selected}`}
-            aria-hidden="true"
-          >
-            <span className="diagram-ring" />
-            <span className="diagram-square" />
-            <span className="diagram-cross">↗</span>
-            <span className="diagram-label">
-              {service.stage.toUpperCase()} / BY DESIGN
-            </span>
-          </div>
-          <h3>{service.short}</h3>
+          <div className={`discipline-art discipline-${selected}`} aria-hidden="true"><span className="discipline-line"/><span className="discipline-loop"/><span className="discipline-loop second-loop"/><span className="discipline-word">{chapterWords[selected]}</span><span className="micro">{service.number} / The next chapter</span></div>
+          <h3>{chapterTitles[selected]}</h3>
+          <p className="discipline-description">{service.short}</p>
           <ul className="deliverable-preview">
             {service.groups.slice(0, 4).map((group) => (
               <li key={group.title}>{group.title}</li>

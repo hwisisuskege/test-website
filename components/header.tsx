@@ -13,7 +13,7 @@ export function Header() {
   }, [pathname]);
   return (
     <header
-      className="site-header"
+      className={`site-header ${pathname === "/" ? "cinema-header" : ""}`}
       onKeyDown={(e) => {
         if (e.key === "Escape" && open) {
           setOpen(false);

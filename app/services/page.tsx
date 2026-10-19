@@ -11,9 +11,9 @@ export default function Services() {
   return (
     <>
       <PageIntro
-        eyebrow="Our services / Connected by design"
-        title="The whole journey. Thoughtfully connected."
-        text="How you look, what you say, and how people find you should work together. Choose a focused piece of work or connect several disciplines around one clear goal."
+        eyebrow="Our disciplines"
+        title="Every impression leaves a trace."
+        text="A website someone remembers. A post they return to. A search that leads to the right conversation. We shape these moments around the same understanding of your business."
       />
       <div className="container service-directory">
         {services.map((service) => (
@@ -40,11 +40,9 @@ export default function Services() {
         ))}
       </div>
       <section className="container scope-note">
-        <h2>The right scope, not the longest list.</h2>
+        <h2>Start with what matters most.</h2>
         <p>
-          We agree priorities, deliverables, responsibilities, and costs in a
-          tailored proposal. Start with the challenge; you do not need to know
-          the exact services yet.
+          A focused website project may be the right first move. Or the story may need to connect across several channels. We’ll agree the priorities, deliverables, responsibilities, and investment before anything begins.
         </p>
       </section>
       <ClosingCTA />

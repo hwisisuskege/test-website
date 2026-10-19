@@ -12,8 +12,8 @@ export default function Work() {
     <>
       <PageIntro
         eyebrow="Work / Concept explorations"
-        title="Thinking you can see."
-        text="Two self-initiated explorations of how strategy becomes an experience. These are imagined businesses, not commissioned client projects. They demonstrate design decisions and capabilities, not business results."
+        title="A point of view, made visible."
+        text="A landscape studio with a sense of place. A technology product with a simpler story to tell. These self-initiated concept projects explore how a business can feel distinctly itself. Both are imagined briefs, with no client or performance claims."
       />
       <div className="container case-studies">
         {caseStudies.map((project) => (

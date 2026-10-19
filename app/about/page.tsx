@@ -10,9 +10,9 @@ export default function About() {
   return (
     <>
       <PageIntro
-        eyebrow="Our approach"
-        title="The thinking and the making. Together."
-        text="A beautiful website that confuses people misses the point. A campaign that leads to a poor experience does too. We connect creative decisions with the way your business actually works."
+        eyebrow="The way we see it"
+        title="Care is a creative advantage."
+        text="You can feel when something has been considered. In the words that make sense of an idea. In the space around an image. In a small interaction that simply works. That’s the standard we bring to your business."
       />
       <section className="about-statement">
         <div className="container">
@@ -20,17 +20,12 @@ export default function About() {
             ↗
           </span>
           <div>
-            <Eyebrow>From first impression to next customer</Eyebrow>
+            <Eyebrow>The whole experience matters</Eyebrow>
             <h2>
-              Design earns attention. <br />
-              Clarity builds confidence. <br />
-              <em>Good experiences invite action.</em>
+              The idea.<br />The feeling.<br /><em>The way it works.</em>
             </h2>
             <p>
-              We work at the intersection of visual identity, communication, and
-              technology. For service businesses, that means making expertise
-              easy to understand. For startups, it means translating product
-              complexity into a useful, persuasive story.
+              We think about design, language, and technology together. A visual decision should support the story. The story should help someone understand your value. And the finished experience should make the next step feel natural.
             </p>
           </div>
         </div>
@@ -39,20 +34,20 @@ export default function About() {
         <Eyebrow>How we approach the work</Eyebrow>
         {[
           {
-            title: "Understand before making.",
-            text: "Start with your audience, offer, and constraints. The brief should guide the creative work, not sit forgotten in a folder.",
+            title: "Listen for what’s particular.",
+            text: "The useful details are often in the conversation: how you describe a customer, why you built the product, what you refuse to compromise on. That is where the direction begins.",
           },
           {
-            title: "Make the useful feel distinctive.",
-            text: "Strong art direction and familiar interactions can coexist. Every page needs a clear purpose and an understandable next step.",
+            title: "Give every detail a reason.",
+            text: "Typography, imagery, pacing, and interaction should make the same point. We look for an expression that belongs to your business and helps people understand it.",
           },
           {
-            title: "Build for the real world.",
-            text: "Consider small screens, keyboard navigation, content updates, and performance from the beginning. The finished experience matters as much as the presentation.",
+            title: "Carry the idea through.",
+            text: "The care has to survive the build. We consider performance, small screens, keyboard access, content editing, and the tools your business depends on from the start.",
           },
           {
-            title: "Keep decisions and scope clear.",
-            text: "Agree priorities and responsibilities. Share work at useful checkpoints. Explain tradeoffs and make room for considered feedback.",
+            title: "Make room for a conversation.",
+            text: "We show the thinking behind the work, share it at agreed checkpoints, and ask for focused feedback. Scope, responsibilities, and changes stay visible throughout.",
           },
         ].map((p, i) => (
           <article key={p.title}>

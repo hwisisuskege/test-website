@@ -1,6 +1,6 @@
 # FIRST/NEXT — agency website
 
-A complete Next.js App Router website for a website design, social media, and digital marketing agency. The creative concept is “From first impression to next customer.” **FIRST/NEXT is a temporary concept wordmark, not an invented business identity.** No client results, testimonials, history, or credentials are claimed. The two work examples are visibly labeled concept projects.
+A complete Next.js App Router website for a website design, social media, and digital marketing agency. The creative concept is “A presence worth pausing for”: cinematic sculpture, restrained copy, warm ivory and bronze, and expressive serif typography. **FIRST/NEXT is a temporary concept wordmark, not an invented business identity.** No client results, testimonials, history, or credentials are claimed. The two work examples are visibly labeled concept projects.
 
 ## Run locally
 
@@ -20,7 +20,7 @@ npm run build
 npm run start
 ```
 
-Port 3000 is the default. The app is not publicly deployed. Dependencies are locked in `package-lock.json`. Fonts are local WOFF/WOFF2 subsets with licenses in `public/fonts`; the visual scenes are original CSS/interface compositions, with no external asset requests or heavy animation libraries. Next.js prerenders the content routes; the project form and delivery API run on the server.
+Port 3000 is the default. The app is not publicly deployed. Dependencies are locked in `package-lock.json`. Fonts are local WOFF/WOFF2 subsets with licenses in `public/fonts`; visual scenes combine locally hosted generated artwork and original CSS/interface compositions, with no external asset requests or heavy animation libraries. Next.js prerenders the content routes; the project form and delivery API run on the server.
 
 ## Content and business configuration
 
@@ -40,7 +40,9 @@ Routes:
 - `/about`
 - `/start-a-project`
 
-CSS tokens and responsive rules live in `app/globals.css`. Shared components live in `components/`. The architecture keeps server content separate from interactive header, hero, service explorer, and form components.
+CSS foundations live in `app/globals.css`; the cinematic design and responsive overrides live in `app/editorial.css`. Shared components live in `components/`. The homepage includes pauseable ambient motion, pointer parallax, keyboard-accessible concept selectors, and gradual section reveals. Reduced-motion preferences disable animation, and editorial content remains available without JavaScript.
+
+The sculpture and Fieldwork garden in `public/images` are generated concept artwork, not client photography. Cormorant Garamond joins the locally hosted Space Grotesk and DM Sans fonts, with licenses in `public/fonts`.
 
 ## Project brief delivery
 
@@ -104,7 +106,7 @@ Playwright uses the production build and starts an isolated preview-only server 
 
 - Production build, ESLint, and TypeScript checks passed.
 - 8 unit tests passed, including mocked webhook acceptance and rejection.
-- 10 Chromium browser tests passed across all 9 routes and viewport widths 1440, 768, 390, and 320 pixels.
+- 12 Chromium browser tests cover all 9 routes and viewport widths 1440, 768, 390, and 320 pixels, including cinematic controls and content without JavaScript.
 - No browser errors, broken internal links, or horizontal overflow in the tested routes and sizes.
 - Automated axe WCAG A/AA checks found no violations on the checked routes and form review step. These checks supplement the keyboard and visual review; they are not an accessibility certification.
 - Desktop, tablet, mobile, service, audience, work, about, and brief screenshots were inspected and layout issues corrected.

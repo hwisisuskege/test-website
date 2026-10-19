@@ -10,8 +10,8 @@ const audiences = [
   {
     id: "service-businesses",
     label: "01 / Local & service businesses",
-    headline: "Your expertise deserves a clearer introduction.",
-    text: "When your business runs on trust, your digital presence should help people understand the work, see the fit, and get in touch without guessing.",
+    headline: "Let your reputation arrive before you do.",
+    text: "The care you put into your work should be apparent before the first phone call. We help people understand your expertise, see where you work, and feel comfortable getting in touch.",
     challenges: [
       "Visitors cannot quickly understand your services or coverage.",
       "An outdated website undersells the quality of your work.",
@@ -34,8 +34,8 @@ const audiences = [
   {
     id: "startups",
     label: "02 / Startups & technology companies",
-    headline: "Make a complex product feel immediately relevant.",
-    text: "Your audience should not need your technical knowledge to understand your product. We connect positioning, launch content, and acquisition to the next meaningful action.",
+    headline: "Help them see what you see.",
+    text: "You know the thought that went into the product. Your next customer needs to understand what it changes for them. We find that story and carry it through the website, launch, and demo journey.",
     challenges: [
       "Your product is difficult to explain in a few clear sentences.",
       "A launch is approaching without a coherent website narrative.",
@@ -63,9 +63,9 @@ export default function WhoWeHelp() {
   return (
     <>
       <PageIntro
-        eyebrow="Who we help"
-        title="Built for your next stage."
-        text="Two different business worlds. One shared need: to make the value clear and the next step easy. Our approach adapts to the people you need to reach."
+        eyebrow="Who we work with"
+        title="Good work deserves to be found."
+        text="A reputation built in a neighbourhood. A product built around a new possibility. We work with service businesses and technology companies ready for their digital presence to reflect what they bring to the world."
       />
       {audiences.map((a) => (
         <section key={a.id} id={a.id} className="audience-detail container">

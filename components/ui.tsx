@@ -26,20 +26,17 @@ export function Eyebrow({ children }: { children: React.ReactNode }) {
 }
 export function ClosingCTA() {
   return (
-    <section className="closing">
+    <section className="closing editorial-closing">
       <div className="container">
-        <Eyebrow>Good things start with a conversation</Eyebrow>
+        <Eyebrow>Something on your mind?</Eyebrow>
         <div className="closing-row">
           <h2>
-            Your next chapter. <br />
-            <span>Let’s make it count.</span>
+            Let’s make<br /><em>something matter.</em>
           </h2>
           <CTA light />
         </div>
         <p>
-          A new website, a sharper story, or a better way to reach your
-          customers. <br />
-          Tell us where you are. We’ll work out what comes next.
+          Bring the ambition, the half-formed idea, the thing you keep coming back to.<br />We’ll help you find its shape.
         </p>
       </div>
     </section>

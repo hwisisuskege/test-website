@@ -19,12 +19,10 @@ export default function StartProject() {
           you’re <em>building.</em>
         </h1>
         <p>
-          A clearer website. A more consistent presence. A product ready for its
-          next chapter.
+          A clear vision or the beginning of one. Both are welcome here.
         </p>
         <p>
-          Share a little about your business and what you have in mind. We’ll
-          use your brief to shape a conversation and a tailored proposal.
+          Tell us what you care about, what feels unfinished, and what you’d like to change. A few thoughtful details are enough to begin shaping the right project together.
         </p>
         <div className="project-next">
           <span className="micro">WHAT COMES NEXT</span>

@@ -1,43 +1,38 @@
 import Link from "next/link";
 import { faqs, process } from "@/lib/content";
 import { Eyebrow } from "./ui";
+import { Reveal } from "./reveal";
 export function Audiences() {
   return (
-    <section className="audiences">
+    <section className="audiences editorial-audiences">
       <div className="container section">
-        <Eyebrow>Built around your kind of business</Eyebrow>
+        <Eyebrow>Different worlds. Familiar ambitions.</Eyebrow>
         <div className="audience-grid">
           <h2>
-            Different challenges. <br />
-            <em>The same care.</em>
+            Your world.<br /><em>Understood.</em>
           </h2>
           <div className="audience-path">
             <span className="micro">01 / LOCAL & SERVICE BUSINESSES</span>
             <h3>
-              Be the clear choice <br />
-              in your corner of the world.
+              Rooted<br /><em>in a place.</em>
             </h3>
             <p>
-              Show what you do, where you work, and why it matters. Make it
-              easier for the right people to find you and start a conversation.
+              You’ve built a reputation through the work itself. Let’s give it a digital presence that carries the same care—from a local search to a well-informed enquiry.
             </p>
             <Link href="/who-we-help#service-businesses" className="text-link">
-              Make your expertise visible <span aria-hidden="true">↗</span>
+              For local & service businesses <span aria-hidden="true">↗</span>
             </Link>
           </div>
           <div className="audience-path">
             <span className="micro">02 / STARTUPS & TECHNOLOGY</span>
             <h3>
-              Complex product. <br />
-              Compelling story.
+              Built around<br /><em>a possibility.</em>
             </h3>
             <p>
-              Turn product complexity into a clear reason to care. Connect your
-              launch, content, and campaigns to a considered demo or sign-up
-              journey.
+              You can see what your product could change. We help other people see it too, with a story they can follow and a launch that feels like one connected idea.
             </p>
             <Link href="/who-we-help#startups" className="text-link">
-              Bring your product into focus <span aria-hidden="true">↗</span>
+              For startups & technology companies <span aria-hidden="true">↗</span>
             </Link>
           </div>
         </div>
@@ -50,18 +45,16 @@ export function Process() {
     <section className="section container process-section">
       <div className="section-title-row">
         <div>
-          <Eyebrow>Clear steps. Shared direction.</Eyebrow>
+          <Eyebrow>A considered collaboration</Eyebrow>
           <h2>
-            From “what if” <br />
-            to what’s next.
+            Good work starts<br /><em>with good questions.</em>
           </h2>
         </div>
         <p>
-          You know your business. <br />
-          We bring the questions, craft, and clarity.
+          Room to explore. A clear way forward.<br />And you, involved in the decisions that matter.
         </p>
       </div>
-      <ol className="process-list">
+      <Reveal><ol className="editorial-process">
         {process.map((step, i) => (
           <li key={step.title}>
             <span className="process-number">0{i + 1}</span>
@@ -69,7 +62,7 @@ export function Process() {
             <p>{step.text}</p>
           </li>
         ))}
-      </ol>
+      </ol></Reveal>
     </section>
   );
 }
@@ -77,10 +70,9 @@ export function FAQ() {
   return (
     <section className="section container faq-section">
       <div>
-        <Eyebrow>A few things, answered</Eyebrow>
+        <Eyebrow>The practical things</Eyebrow>
         <h2>
-          Before we <br />
-          get started.
+          A little clarity,<br /><em>before we begin.</em>
         </h2>
       </div>
       <div className="faq-list">

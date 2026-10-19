@@ -89,6 +89,7 @@ for (const size of [
       ).toBe(true);
     }
     await page.goto("/");
+    await page.emulateMedia({ reducedMotion: "reduce" });
     await page.screenshot({
       path: `test-results/home-${size.width}.png`,
       fullPage: true,
@@ -113,7 +114,7 @@ test("keyboard service explorer, hero, mobile menu, FAQ and reduced motion", asy
   await expect(page.getByRole("tabpanel")).toContainText("Social strategy");
   await page.getByRole("button", { name: "03 Action" }).click();
   await expect(page.locator(".stage-description")).toHaveText(
-    "A clear path from interest to enquiry.",
+    "Search and campaigns that lead to a considered next step.",
   );
   await page.getByText("Do we need all three services?").click();
   await expect(page.locator("details").first()).toHaveAttribute("open", "");
@@ -134,6 +135,40 @@ test("keyboard service explorer, hero, mobile menu, FAQ and reduced motion", asy
     "aria-expanded",
     "false",
   );
+});
+test("cinematic controls and concept gallery work with keyboard and touch", async ({ page }) => {
+  await page.goto("/");
+  const motion = page.getByRole("button", { name: "Pause ambient motion" });
+  await motion.focus();
+  await page.keyboard.press("Enter");
+  await expect(page.getByRole("button", { name: "Resume ambient motion" })).toHaveAttribute("aria-pressed", "true");
+  expect(await page.locator(".cinema-image img").evaluate(element => getComputedStyle(element).animationPlayState)).toBe("paused");
+  await page.getByRole("button", { name: "02 Attention" }).click();
+  await expect(page.locator(".film-caption")).toContainText("Social content with a point of view");
+  await expect(page.locator(".film-caption a")).toHaveAttribute("href", "/services/social-media");
+  const relay = page.getByRole("button", { name: /02.*Technology startup.*Relay/ });
+  await relay.focus();
+  await page.keyboard.press("Enter");
+  await expect(relay).toHaveAttribute("aria-pressed", "true");
+  await expect(page.locator(".gallery-frame")).toContainText("Room for");
+  await expect(page.getByRole("link", { name: "Inside the concept" })).toHaveAttribute("href", "/work#relay");
+  await page.setViewportSize({ width: 390, height: 844 });
+  await page.getByRole("button", { name: /01.*Local landscape studio.*Fieldwork/ }).click();
+  await expect(page.locator(".gallery-frame img")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Inside the concept" })).toHaveAttribute("href", "/work#fieldwork");
+  await page.emulateMedia({ reducedMotion: "reduce" });
+  expect(await page.locator(".cinema-image img").evaluate(element => getComputedStyle(element).animationName)).toBe("none");
+  await expect(page.getByRole("button", { name: "Resume ambient motion" })).not.toBeVisible();
+});
+test("editorial copy and navigation remain available without JavaScript", async ({ browser }) => {
+  const context = await browser.newContext({ javaScriptEnabled: false });
+  const page = await context.newPage();
+  await page.goto("/");
+  await expect(page.locator("h1")).toContainText("A presence");
+  await page.locator(".manifesto h2").scrollIntoViewIfNeeded();
+  await expect(page.locator(".manifesto h2")).toBeVisible();
+  await expect(page.getByRole("link", { name: "Inside the concept" })).toHaveAttribute("href", "/work#fieldwork");
+  await context.close();
 });
 test("form validates, preserves back navigation, handles failure, and reports preview honestly", async ({
   page,
@@ -248,6 +283,8 @@ test("preview SEO excludes indexing, and missing routes return 404", async ({
 test("automated accessibility checks on all routes and form steps", async ({
   page,
 }) => {
+  // Measure final rendered colors, rather than intermediate reveal opacity.
+  await page.emulateMedia({ reducedMotion: "reduce" });
   const { default: AxeBuilder } = await import("@axe-core/playwright");
   for (const path of routes) {
     await page.goto(path);

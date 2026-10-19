@@ -21,15 +21,15 @@ export const services: Service[] = [
     number: "01",
     stage: "Presence",
     title: "Website design & development",
-    short: "A clear story. A considered experience. A better way to enquire.",
-    headline: "A website that makes the next step obvious.",
+    short: "Your own corner of the internet, shaped around what makes the business yours. Clear in its purpose. Considered in every detail.",
+    headline: "An experience that could only be yours.",
     intro:
-      "Turn what makes your business valuable into a digital experience people can understand, trust, and use. Strategy, design, and development work together from the first page outline.",
+      "The way a page opens. The words that draw someone in. The confidence to take the next step. We plan, design, and build websites where those details work together, from the first impression to the enquiry.",
     groups: [
       {
         title: "Strategy & website planning",
         problem:
-          "When every page feels equally important, visitors lose the thread. We help decide what your website needs to say and where it should lead.",
+          "Before a layout, there is a question: what does someone need to understand to choose you? We use that answer to decide the pages, the priorities, and the path through them.",
         deliverables: [
           "Business goals and audience discovery",
           "Website audits",
@@ -42,7 +42,7 @@ export const services: Service[] = [
       {
         title: "Brand-led website design",
         problem:
-          "A generic template can make a distinctive business look interchangeable. We translate your identity into a coherent, usable website.",
+          "Your website should feel familiar to someone who knows your business and intriguing to someone who doesn’t. We find that expression through typography, image, space, and interaction.",
         deliverables: [
           "Custom business websites",
           "Visual direction and UI design",
@@ -56,7 +56,7 @@ export const services: Service[] = [
       {
         title: "Service business websites",
         problem:
-          "People need to know what you do, where you work, and how to get started. We bring those answers closer to the first click.",
+          "A prospective customer is deciding whether your work is right for their situation. We give your services, coverage, past projects, and enquiry journey the space and clarity to answer that question.",
         deliverables: [
           "Service and location pages",
           "Enquiry and quote request journeys",
@@ -69,7 +69,7 @@ export const services: Service[] = [
       {
         title: "Startup & technology websites",
         problem:
-          "A strong product can be difficult to explain. We build a narrative around the customer problem, the product, and its practical value.",
+          "You know every feature. Your visitor needs to see the difference the product could make in their day. We build the narrative from that point of view, then open up the detail at the right moment.",
         deliverables: [
           "Product marketing websites",
           "SaaS websites and feature pages",
@@ -82,7 +82,7 @@ export const services: Service[] = [
       {
         title: "Development & integrations",
         problem:
-          "A design only works when it works in the browser and with your tools. We build the interface and connect the handoffs behind it.",
+          "The finished experience needs to carry the design’s intent and fit into the business behind it. We build responsive interfaces, editable content, and the connections that make the handoffs work.",
         deliverables: [
           "Responsive frontend development",
           "CMS implementation and editable content",
@@ -95,7 +95,7 @@ export const services: Service[] = [
       {
         title: "Performance, accessibility & care",
         problem:
-          "Slow pages and awkward interactions make a good first impression harder. We identify barriers and keep the website useful after launch.",
+          "Care continues after the first visit and after launch. We look at loading speed, accessibility, search foundations, and the small improvements that keep a website comfortable to use.",
         deliverables: [
           "Page speed improvements",
           "Technical SEO foundations",
@@ -114,15 +114,15 @@ export const services: Service[] = [
     stage: "Attention",
     title: "Social media",
     short:
-      "Content with a point of view. A presence worth paying attention to.",
-    headline: "Give people a reason to pay attention.",
+      "A recognisable voice, a considered rhythm, and ideas worth returning to. Content that sounds like you and makes sense to your audience.",
+    headline: "Something worth coming back to.",
     intro:
-      "Build a consistent voice in the places your audience actually spends time. We connect strategy, useful content, and a practical publishing rhythm to your wider business story.",
+      "One post introduces you. The next builds on the impression. We develop the ideas, visual language, and publishing rhythm that make your social presence feel like a continuing conversation.",
     groups: [
       {
         title: "Social strategy",
         problem:
-          "Posting more is not a strategy. We establish who you need to reach, what they care about, and which channels deserve your time.",
+          "Start with the person on the other side of the screen: what interests them, what they need to understand, and where they spend time. Those choices give every post a reason to exist.",
         deliverables: [
           "Audience and competitor research",
           "Channel selection",
@@ -135,7 +135,7 @@ export const services: Service[] = [
       {
         title: "Profile & presence setup",
         problem:
-          "An unclear bio or inconsistent profile can interrupt a promising first impression. We make your selected channels feel connected.",
+          "A profile is often the first introduction. We bring the bio, imagery, and essential information into focus so your selected channels feel like parts of the same business.",
         deliverables: [
           "Profile audits and optimization",
           "Bios and messaging",
@@ -148,7 +148,7 @@ export const services: Service[] = [
       {
         title: "Content production",
         problem:
-          "Your expertise needs a format people can engage with. We turn ideas, products, and everyday questions into useful content.",
+          "There is a story in how you work, what your product changes, and the questions customers ask. We turn that material into posts, films, and explainers with a clear point of view.",
         deliverables: [
           "Static posts and carousels",
           "Short-form video concepts and editing",
@@ -161,7 +161,7 @@ export const services: Service[] = [
       {
         title: "Social management",
         problem:
-          "Content plans need a workable routine. We create an approval and publishing process that fits your team.",
+          "A consistent presence needs a process people can actually keep up with. We agree a publishing rhythm, an approval routine, and clear responsibilities for the conversations that follow.",
         deliverables: [
           "Content scheduling and publishing",
           "Approval workflows",
@@ -174,7 +174,7 @@ export const services: Service[] = [
       {
         title: "Launches & campaigns",
         problem:
-          "A launch needs a connected story, not a single announcement. We plan a sequence that gives people context and a clear next step.",
+          "A launch unfolds over time: a first hint, a reason to care, an invitation to take part. We shape the content sequence and connect it to the pages and campaigns supporting the launch.",
         deliverables: [
           "Business and product launch campaigns",
           "Seasonal promotions",
@@ -191,10 +191,10 @@ export const services: Service[] = [
     number: "03",
     stage: "Action",
     title: "Digital marketing",
-    short: "Connect discovery to a meaningful next step. Learn what works.",
-    headline: "Turn being found into moving forward.",
+    short: "Meet people at the moment of interest. Connect the search, the message, and the destination, then learn from what follows.",
+    headline: "Be there when it matters.",
     intro:
-      "Connect search, advertising, content, and conversion around the way people choose your business. Start with a clear question, make the path measurable, and improve with evidence.",
+      "Someone is looking for an answer, weighing an option, or ready to act. We connect search, advertising, content, and measurement around those moments, with a clear reason for every campaign and a considered place for every click to land.",
     groups: [
       {
         title: "Search engine optimization",
@@ -284,45 +284,45 @@ export const services: Service[] = [
 export const process = [
   {
     title: "Share the brief",
-    text: "Tell us about your business, the problem, and what you want to change. An early idea is enough to start.",
+    text: "Tell us what you’re building and what you want to change. A rough idea, an existing website, or a clear brief gives us somewhere to start.",
   },
   {
     title: "Clarify goals & scope",
-    text: "Together, we work through priorities, audiences, content, technical needs, and what success should mean.",
+    text: "We ask about your customers, your ambitions, and the practical constraints. Together, we decide what the work needs to do and what deserves attention first.",
   },
   {
     title: "Receive a tailored proposal",
-    text: "Review the deliverables, responsibilities, investment, and milestones. We agree the scope before work begins.",
+    text: "You receive a proposal with a defined scope, deliverables, investment, and milestones. Content responsibilities and approvals are agreed before the work begins.",
   },
   {
     title: "Design & build",
-    text: "See the work at agreed checkpoints. You bring business expertise and consolidated feedback; we develop the experience.",
+    text: "We share the direction and develop it through agreed review points. You bring business knowledge and consolidated feedback; we bring the design and technical craft.",
   },
   {
     title: "Review, launch & improve",
-    text: "Check content, functionality, and the launch checklist together. Agree handover and any ongoing support or measurement.",
+    text: "We check the details together, prepare the handover, and agree what happens next. Maintenance, measurement, and further development can continue as a separate scope.",
   },
 ];
 export const faqs = [
   {
     q: "Do we need all three services?",
-    a: "No. We start with the problem and scope the work around it. That may mean a website alone, a focused campaign, or a connected programme across several channels.",
+    a: "Only if they make sense for the project. A website, a focused campaign, or support with social content can each be a useful place to begin. We’ll work through the priorities with you before proposing a scope.",
   },
   {
     q: "How long will a project take?",
-    a: "Timing depends on scope, content readiness, integrations, and review cycles. We propose milestones after discovery and agree responsibilities before work begins.",
+    a: "We’ll map out a realistic schedule once the scope is clear. The amount of content, technical work, and time needed for feedback all shape it. Milestones and responsibilities are agreed before the project starts.",
   },
   {
     q: "What will you need from us?",
-    a: "A clear point of contact, your business knowledge, access to relevant tools, and timely, consolidated feedback. We agree who supplies copy, images, brand assets, and approvals in the proposal. Content production can be included where needed.",
+    a: "Your knowledge of the business is the important part. We’ll also agree a point of contact, access to the relevant tools, and a way to collect feedback. The proposal makes clear who provides copy, imagery, and approvals; we can scope content production where you need support.",
   },
   {
     q: "Can you work with our existing website?",
-    a: "Yes. An audit helps establish what is worth keeping, which constraints matter, and whether focused improvements or a rebuild make more sense. Platform access and compatibility are checked first.",
+    a: "Yes. We begin by looking at what is already there: the platform, the content, the experience, and the connections behind it. That gives us a basis for recommending considered improvements or a rebuild, with the tradeoffs explained.",
   },
   {
     q: "What happens after launch?",
-    a: "We agree a handover and any training, maintenance, content support, or campaign management you need. Ongoing work is scoped separately so responsibilities and costs stay clear.",
+    a: "We agree a handover and any training you need. If you’d like us to stay involved, maintenance, content, and campaign support can be scoped separately. You’ll know what is included and who is responsible for what.",
   },
 ];
 export type CaseStudy = {
@@ -344,16 +344,16 @@ export const caseStudies: CaseStudy[] = [
     type: "Local landscape studio",
     label: "Concept project",
     brief:
-      "Imagine a landscape studio whose thoughtful work is hidden behind an unclear website. The brief: make its services tangible and the enquiry process straightforward.",
+      "An imagined landscape studio creates spaces people want to spend time in. The challenge was to carry that feeling into a website while helping a prospective client understand the services and begin a conversation about their own space.",
     scope: ["Website strategy", "Visual direction", "Enquiry journey"],
     approach:
-      "A warm, editorial layout gives the work room to breathe. Clear service descriptions and a guided brief help a prospective client explain their space and priorities.",
+      "Warm stone, soft light, and generous space set the pace. The editorial direction lets the garden lead, then brings the visitor back to practical service information and a considered enquiry. The garden image is generated concept artwork, not a photograph of completed client work.",
     deliverables: [
       "Responsive homepage direction",
       "Service navigation",
       "Project enquiry interaction",
     ],
-    imagery: null,
+    imagery: "/images/fieldwork-garden.webp",
     verifiedOutcomes: [],
   },
   {
@@ -362,10 +362,10 @@ export const caseStudies: CaseStudy[] = [
     type: "Technology startup",
     label: "Concept project",
     brief:
-      "Imagine a workflow product preparing to launch. The brief: explain how it connects a team’s decisions without overwhelming visitors with technical features.",
+      "An imagined collaboration product helps people turn scattered ideas into shared decisions. The brief was to make its value understandable before introducing the mechanics of the product.",
     scope: ["Product narrative", "Launch website", "Demo pathway"],
     approach:
-      "A precise interface diagram makes an abstract product concrete. Benefit-led sections connect features to everyday tasks, with a clear invitation to explore the product.",
+      "A quiet visual system and a simple relationship diagram bring the story back to people working together. The narrative moves from an idea, to a shared direction, to a useful next step—giving a demo request a clear purpose.",
     deliverables: [
       "Product landing page direction",
       "Interface illustration",
